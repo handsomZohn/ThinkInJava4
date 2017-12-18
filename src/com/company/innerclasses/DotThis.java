@@ -1,4 +1,4 @@
-package com.company;
+package com.company.innerclasses;
 
 /**
  * Created by zhang on 2017/12/18.
