@@ -14,6 +14,7 @@ public class Parcel6 {
       TrackingSlip ts = new TrackingSlip("slip");
       String s = ts.getSlip();
     }
+    //在if域中定义的内部类 只能在if域里面使用
     // Can't use it here! Out of scope:
     //! TrackingSlip ts = new TrackingSlip("x");
   }	
