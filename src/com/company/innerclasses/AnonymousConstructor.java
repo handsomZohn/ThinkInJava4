@@ -1,7 +1,7 @@
 package com.company.innerclasses;
 
 /**
- * 类似构造器行为
+ * 绫讳技鏋勯�犲櫒琛屼负
  */
 abstract class Base {
   public Base(int i) {
