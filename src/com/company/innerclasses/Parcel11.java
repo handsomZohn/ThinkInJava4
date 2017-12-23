@@ -7,6 +7,7 @@ package com.company.innerclasses;//: innerclasses/Parcel11.java
  * 2)不能从嵌套类的对象中访问非静态的外围类对象
  */
 public class Parcel11 {
+    //嵌套类
     private static class ParcelContents implements Contents {
         private int i = 11;
 
