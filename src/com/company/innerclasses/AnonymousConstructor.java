@@ -1,5 +1,4 @@
-package com.company.innerclasses;//: innerclasses/AnonymousConstructor.java
-// Creating a constructor for an anonymous inner class.
+package com.company.innerclasses;
 
 abstract class Base {
   public Base(int i) {
@@ -21,8 +20,4 @@ public class AnonymousConstructor {
     Base base = getBase(47);
     base.f();
   }
-} /* Output:
-Base constructor, i = 47
-Inside instance initializer
-In anonymous f()
-*///:~
+}
