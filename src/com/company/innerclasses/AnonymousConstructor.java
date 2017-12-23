@@ -1,5 +1,8 @@
 package com.company.innerclasses;
 
+/**
+ * 类似构造器行为
+ */
 abstract class Base {
   public Base(int i) {
     System.out.println("Base constructor, i = " + i);
