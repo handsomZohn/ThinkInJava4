@@ -1,14 +1,11 @@
-package com.company.innerclasses;
+package com.company.innerclasses;//: innerclasses/AnonymousConstructor.java
+// Creating a constructor for an anonymous inner class.
+import static jdk.nashorn.internal.objects.Global.print;
+//import static net.mindview.util.Print.*;
 
-/**
- * 类似构造器行为
- * 匿名内部类中不可能有命名构造器
- * 通过实例初始话化
- * 能够达到为一个匿名内部类创建一个构造器的效果
- */
 abstract class Base {
   public Base(int i) {
-    System.out.println("Base constructor, i = " + i);
+    print("Base constructor, i = " + i);
   }
   public abstract void f();
 }	
@@ -16,10 +13,9 @@ abstract class Base {
 public class AnonymousConstructor {
   public static Base getBase(int i) {
     return new Base(i) {
-      //没有在这里使用i 所以不要求 i 必须声明为final类型
-      { System.out.println("Inside instance initializer"); }
+      { print("Inside instance initializer"); }
       public void f() {
-        System.out.println("In anonymous f()");
+        print("In anonymous f()");
       }
     };
   }
@@ -27,4 +23,8 @@ public class AnonymousConstructor {
     Base base = getBase(47);
     base.f();
   }
-}
+} /* Output:
+Base constructor, i = 47
+Inside instance initializer
+In anonymous f()
+*///:~
